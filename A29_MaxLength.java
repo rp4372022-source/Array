@@ -1,4 +1,4 @@
-public class A28_MaxLength {
+public class A29_MaxLength {
 
     static int find(String seats){
         if(seats == null || seats.length() < 2) return -1;

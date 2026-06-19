@@ -1,5 +1,6 @@
 import java.util.Arrays;
 public class A31_MeetingSchedular {
+    // assuming that the slots are sorted at given time
     static int[] find(int[][] p1Slots,int[][] p2Slots,int d){
             int ptr1 = 0,ptr2 =0;
             while(ptr1<p1Slots.length && ptr2 <p2Slots.length){
@@ -17,13 +18,9 @@ public class A31_MeetingSchedular {
             return new int[]{};
     }
     public static void main(String[] args){
-            // int[][] p1 = {{10,50}, {60,120}, {140,210}};
-            // int[][] p2 = {{0,15}, {60,70}};
-            // int d = 8;
-
-            int[][] p1 = {{10,50}, {}, {60,120}, {140,210}};
-            int[][] p2 = {{0,15}, {17,20}, {21,30}};
-            int d = 21;
+            int[][] p1 = {{10,50}, {60,120}, {140,210}};
+            int[][] p2 = {{0,15}, {60,70}};
+            int d = 8;
             System.out.println(Arrays.toString(find(p1,p2,d)));
     }
 }

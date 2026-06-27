@@ -22,7 +22,7 @@ public class A39_SmallestMissingPositiveNumber {
 
         return maxNum+1;
     }
-    static int find1(int[] nums){
+    static int find1(int[] nums){//tc - n, sc = n
         Set<Integer> presentNums = new HashSet<>();
         for (int n : nums) {
             presentNums.add(n);
